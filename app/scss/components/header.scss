@@ -1,0 +1,27 @@
+@use "../util" as *;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("/app/images/header-fpo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: rem(208);
+  position: relative;
+  padding: 0 rem(42);
+
+  h1,
+  a {
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: contrast(0.8);
+    z-index: 0;
+  }
+}
