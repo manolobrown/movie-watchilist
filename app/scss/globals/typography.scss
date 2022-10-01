@@ -13,3 +13,8 @@ a:active {
   text-decoration: none;
   color: var(--white);
 }
+
+body {
+  font-size: rem(14);
+  line-height: rem(20);
+}

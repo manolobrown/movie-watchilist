@@ -1,1 +1,46 @@
-@use '../util' as *;
+@use "../util" as *;
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 rem(42);
+  margin-top: rem(-19);
+
+  .icon {
+    position: absolute;
+    left: rem(57);
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    border-radius: rem(6) 0 0 rem(6);
+    background-color: var(--dark-gray);
+    border: 0;
+    padding: rem(11) rem(15) rem(11) rem(41);
+    font-size: rem(14);
+    font-weight: 500;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  button {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: rem(120);
+    background-color: var(--gray);
+    border: 0;
+    align-self: stretch;
+    border-radius: 0 rem(6) rem(6) 0;
+    color: var(--white);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--dark-gray);
+    }
+  }
+}
