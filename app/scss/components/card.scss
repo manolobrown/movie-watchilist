@@ -1,1 +1,48 @@
-@use '../util' as *;
+@use "../util" as *;
+.card {
+  display: flex;
+  column-gap: rem(21);
+  align-items: center;
+
+  h2 {
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    font-size: rem(12);
+    column-gap: rem(18);
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    column-gap: rem(5);
+  }
+
+  p {
+    color: var(--off-white);
+    margin-bottom: 0;
+  }
+
+  .image {
+    max-width: rem(99);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.card + .card {
+  padding-top: rem(20);
+  margin-top: rem(20);
+  border-top: 1px solid hsl(0, 0%, 17%);
+}

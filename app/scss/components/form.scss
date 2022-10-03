@@ -6,6 +6,7 @@ form {
   position: relative;
   padding: 0 rem(42);
   margin-top: rem(-19);
+  margin-bottom: rem(42);
 
   .icon {
     position: absolute;
@@ -26,6 +27,7 @@ form {
     font-weight: 500;
     flex-basis: 0;
     flex-grow: 1;
+    color: var(--off-white);
   }
   button {
     flex-basis: 0;

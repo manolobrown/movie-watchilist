@@ -1,6 +1,7 @@
 @use "../util" as *;
 
 .container {
+  width: 100%;
   padding: 0 rem(24);
   max-width: rem(550);
   margin: 0 auto;
@@ -9,4 +10,35 @@
     padding: 0;
     transform: translate(0, 0);
   }
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+body,
+.heading-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-start {
+  margin-top: 50%;
+  text-align: center;
+  a {
+    font-size: rem(14);
+    column-gap: rem(5);
+    margin-top: rem(15);
+  }
+  a,
+  a span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main {
+  padding-bottom: rem(42);
 }
