@@ -23,6 +23,11 @@
     display: flex;
     align-items: center;
     column-gap: rem(5);
+    cursor: pointer;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
 
   p {
